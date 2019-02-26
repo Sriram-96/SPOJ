@@ -91,10 +91,11 @@ int main()
 	for(i=0;i<n;i++)
 	{
 		temp=g.DFS(i);
+//		cout<<i<<"-"<<temp<<endl;
 		if(temp>max)
 			max=temp;
 	}
-    cout<<max;
+    cout<<max-1;
 //	g.DFS(1);
     return 0; 
 } 
