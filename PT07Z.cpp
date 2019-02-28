@@ -91,15 +91,15 @@ int main()
     	g.addEdge(x-1,y-1);
     	g.addEdge(y-1,x-1);
 	}
-//	for(i=0;i<n;i++)
-//	{
-//		temp=g.BFS(i);
-////		cout<<i<<"-"<<temp<<endl;
-//		if(temp>max)
-//			max=temp;
-//	}
-//    cout<<max-1;
 	int last_node=g.BFS1(0);
 	cout<<g.BFS2(last_node);
+	for(i=0;i<n;i++)
+	{
+		temp=g.DFS(i);
+		if(temp>max)
+			max=temp;
+	}
+    cout<<max;
+//	g.DFS(1);
     return 0; 
 } 
